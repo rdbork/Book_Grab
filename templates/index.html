@@ -1,0 +1,7 @@
+{% if current_user.is_authenticated %}
+<h1> hello {{current_user.email}}</h1>
+{% endif %}
+
+{% for user in users %}
+<p>{{user.email}}</p>
+{% endfor %}
